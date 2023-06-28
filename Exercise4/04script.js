@@ -6,6 +6,6 @@ let str = prompt("Введіть довільний рядок:");
 let maxLengthString = prompt("Введіть максимальну довжину рядку:");
 
 if(str.length > maxLengthString){
-    str = str.slice(0, maxLengthString) + "…";
+    str = str.slice(0, maxLengthString - 1) + "…";
 }
 console.log(str);
