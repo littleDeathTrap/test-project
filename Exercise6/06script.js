@@ -11,29 +11,46 @@
 //Функція має повернути true, якщо слово знаходиться у рядку, інакше повернути false.
 
 //№1
-function maxNumber(a, b) {
-  // return Math.max(a, b);
-  if (a > b) {
-    return a;
-  } else {
-    return b;
-  }
-}
-let result = maxNumber(17, 23);
-console.log(result);
+// function maxNumber(a, b) {
+//   return Math.max(a, b);
+//   if (a > b) {
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+// let result = maxNumber(17, 23);
+// console.log(result);
 
-//№2
+//№1 варіант 2
+function maxNumber(a, b){
+    return a > b ? a : b;
+}
+console.log("91 и 21.Більше значення- " + maxNumber(91, 21));
+
+
+// //№2
 function checkAge(age) {
   const adultAge = 18;
-  if (age < adultAge) {
-    return false;
-  } else {
+  if (age > adultAge) {
     return true;
+  } else {
+    return false;
   }
 }
 let userAge = 23;
 let check = checkAge(userAge);
 console.log(check);
+
+//№2 варіант 2
+// function checkAge(age){
+//     const adultAge = 18;
+//     return age > adultAge ? true : false;
+// }
+// let userAge = 23;
+// let check = checkAge(userAge);
+// console.log(check);
+
 
 //№3(залишити prompt)
 function stringTruncation(){
@@ -46,6 +63,7 @@ let maxLengthString = +prompt("Введіть максимальну довжи�
 let result2 = stringTruncation();
 console.log(result2);
 
+
 //№3 варіант2(як аргумент)
 // function stringTruncation(str, maxLengthString){
 //   if(str.length > maxLengthString)
@@ -56,6 +74,7 @@ console.log(result2);
 // let maxLengthString = 4;
 // let result2 = stringTruncation(str, maxLengthString);
 // console.log(result2);
+
 
 //№4
 function checkWord(str, word) {
